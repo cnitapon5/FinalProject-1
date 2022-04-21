@@ -6,22 +6,21 @@ using System.Threading.Tasks;
 
 namespace finalProject
 {
-    internal class Fadepatterncardigan
+    internal class Blockingwindbreaker
     {
-        
         public string getName()
         {
-            string Name = "fade pattern cardigan";
+            string Name = "blocking windbreaker";
             return Name;
         }
         public string getColor()
         {
-            string Color = "black";
+            string Color = "Navy";
             return Color;
         }
         public string getPrice()
         {
-            string Price = "1600";
+            string Price = "1830";
             return Price;
         }
     }

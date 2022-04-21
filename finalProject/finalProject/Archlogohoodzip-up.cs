@@ -6,13 +6,22 @@ using System.Threading.Tasks;
 
 namespace finalProject
 {
-    internal class Archlogohoodzip_up : Hoodie
+    internal class Archlogohoodzip_up
     {
-        public Archlogohoodzip_up()
+        public string getName()
         {
-            base.Name = "arch logo hood zip-up";
-            base.Color = "black";
-            base.Price = "1530";
+            string Name = "arch logo hood zip-up";
+            return Name;
+        }
+        public string getColor()
+        {
+            string Color = "black";
+            return Color;
+        }
+        public string getPrice()
+        {
+            string Price = "1530";
+            return Price;
         }
     }
 }

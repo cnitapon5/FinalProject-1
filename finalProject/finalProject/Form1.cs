@@ -13,44 +13,18 @@ namespace finalProject
 {
     public partial class Form1 : Form
     {
-        Archlogobrushedhoodie archlogobrushedhoodie;
-        Archlogohoodzip_up archlogohoodzip_Up;
-        NesticKickFleece nesticKickFleece;
-        Fadepatterncardigan fadepatterncardigan;
-        Splitbrushedhoodie splitbrushedhoodie;
-
-
-
-        Hoodie[] hoodiedex;
-
+        Archlogobrushedhoodie archlogobrushedhoodie = new Archlogobrushedhoodie();
+        Archlogohoodzip_up archlogohoodzip_Up = new Archlogohoodzip_up();
+        NesticKickFleece nesticKickFleece = new NesticKickFleece();
+        Fadepatterncardigan fadepatterncardigan = new Fadepatterncardigan();
+        Splitbrushedhoodie splitbrushedhoodie = new Splitbrushedhoodie();
+        PaintPlayRaised paintPlayRaised = new PaintPlayRaised();
+        Snugoverfitfleece snugoverfitfleece = new Snugoverfitfleece();
+        Blockingwindbreaker blockingwindbreaker = new Blockingwindbreaker();
         public Form1()
         {
             InitializeComponent();
-            hoodiedex = new Hoodie[7];
-
-            archlogobrushedhoodie = new Archlogobrushedhoodie();
-            archlogohoodzip_Up = new Archlogohoodzip_up();
-            nesticKickFleece = new NesticKickFleece();
-            fadepatterncardigan = new Fadepatterncardigan();
-            splitbrushedhoodie = new Splitbrushedhoodie();
-
-
-
-
-            hoodiedex[0] = archlogobrushedhoodie;
-            hoodiedex[0] = archlogohoodzip_Up;
-            hoodiedex[0] = nesticKickFleece;
-            hoodiedex[0] = fadepatterncardigan;
-            hoodiedex[0] = splitbrushedhoodie;
         }
-
-        private void displayHoodie()
-        {
-            this.textName.Text = hoodiedex[0].getName();
-            this.textColor.Text = hoodiedex[0].getColor();
-            this.textPrice.Text = hoodiedex[0].getPrice();
-        }
-
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -68,7 +42,6 @@ namespace finalProject
                 }
             }
         }
-
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (dataGridView1.Rows.Count > 0)
@@ -109,7 +82,6 @@ namespace finalProject
 
 
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             int price = Convert.ToInt32(textPrice.Text);
@@ -132,94 +104,112 @@ namespace finalProject
             dataGridView1.Rows[n].Cells[3].Value = Total;
             dataGridView1.Rows[n].Cells[4].Value = Getprice;
 
+            textName.Text = "";
+            textColor.Text = "";
+            textPrice.Text = "";
+            textTotal.Text = "";
+            textBoxGetprice.Text = "";
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string Name = archlogobrushedhoodie.getName();
+            textName.Text = Name;
+
+            string Color = archlogobrushedhoodie.getColor();
+            textColor.Text = Color;
+
+            string Price = archlogobrushedhoodie.getPrice();
+            textPrice.Text = Price;
+        } 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string Name = archlogohoodzip_Up.getName();
+            textName.Text = Name;
+
+            string Color = archlogohoodzip_Up.getColor();
+            textColor.Text = Color;
+
+            string Price = archlogohoodzip_Up.getPrice();
+            textPrice.Text = Price;
+        }
+       
+
+        private void button7_Click_1(object sender, EventArgs e)
+        {
+            string Name = splitbrushedhoodie.getName();
+            textName.Text = Name;
+
+            string Color = splitbrushedhoodie.getColor();
+            textColor.Text = Color;
+
+            string Price = splitbrushedhoodie.getPrice();
+            textPrice.Text = Price;
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            string Name = paintPlayRaised.getName();
+            textName.Text = Name;
+
+            string Color = paintPlayRaised.getColor();
+            textColor.Text = Color;
+
+            string Price = paintPlayRaised.getPrice();
+            textPrice.Text = Price;
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            string Name = snugoverfitfleece.getName();
+            textName.Text = Name;
+
+            string Color = snugoverfitfleece.getColor();
+            textColor.Text = Color;
+
+            string Price = snugoverfitfleece.getPrice();
+            textPrice.Text = Price;
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            string Name = blockingwindbreaker.getName();
+            textName.Text = Name;
+
+            string Color = blockingwindbreaker.getColor();
+            textColor.Text = Color;
+
+            string Price = blockingwindbreaker.getPrice();
+            textPrice.Text = Price;
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            string Name = nesticKickFleece.getName();
+            textName.Text = Name;
+
+            string Color = nesticKickFleece.getColor();
+            textColor.Text = Color;
+
+            string Price = nesticKickFleece.getPrice();
+            textPrice.Text = Price;
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            string Name = fadepatterncardigan.getName();
+            textName.Text = Name;
+
+            string Color = fadepatterncardigan.getColor();
+            textColor.Text = Color;
+
+            string Price = fadepatterncardigan.getPrice();
+            textPrice.Text = Price;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            
-            //if (radioButton5.Checked == true)
-            //{
-            //    string hoodie5 = "split brushed hoodie";
-            //    string Color5 = "blk";
-            //    string price5 = "1600";
-            //    textName.Text = hoodie5;
-            //    textColor.Text = Color5;
-            //    textPrice.Text = price5;
-            //}
-            //if (radioButton6.Checked == true)
-            //{
-            //    string hoodie6 = "Paint Play Raised";
-            //    string Color6 = "blk";
-            //    string price6 = "1530";
-            //    textName.Text = hoodie6;
-            //    textColor.Text = Color6;
-            //    textPrice.Text = price6;
-
-            //}
-            //if (radioButton7.Checked == true)
-            //{
-            //    string hoodie7 = "snug overfit fleece ";
-            //    string Color7 = "blk";
-            //    string price7 = "1230";
-            //    textName.Text = hoodie7;
-            //    textColor.Text = Color7;
-            //    textPrice.Text = price7;
-            //}
-            //if (radioButton8.Checked == true)
-            //{
-            //    string hoodie8 = "blocking windbreaker";
-            //    string Color8 = "Navy";
-            //    string price8 = "1830";
-            //    textName.Text = hoodie8;
-            //    textColor.Text = Color8;
-            //    textPrice.Text = price8;
-            //}
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Hoodie a1 = hoodiedex[0];
-            Hoodie a2 = hoodiedex[1];
-            Hoodie a3 = hoodiedex[2];
-
-            displayHoodie();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Hoodie b1 = hoodiedex[0];
-            Hoodie b2 = hoodiedex[1];
-            Hoodie b3 = hoodiedex[2];
-
-            displayHoodie();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            Hoodie c1 = hoodiedex[0];
-            Hoodie c2 = hoodiedex[1];
-            Hoodie c3 = hoodiedex[2];
-
-            displayHoodie();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            Hoodie d1 = hoodiedex[0];
-            Hoodie d2 = hoodiedex[1];
-            Hoodie d3 = hoodiedex[2];
-
-            displayHoodie();
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            Hoodie f1 = hoodiedex[0];
-            Hoodie f2 = hoodiedex[1];
-            Hoodie f3 = hoodiedex[2];
-
-            displayHoodie();
+            int rowIndax = dataGridView1.CurrentCell.RowIndex;
+            dataGridView1.Rows.RemoveAt(rowIndax);
         }
     }
 }

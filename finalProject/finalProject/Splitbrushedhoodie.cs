@@ -6,13 +6,23 @@ using System.Threading.Tasks;
 
 namespace finalProject
 {
-    internal class Splitbrushedhoodie : Hoodie
+    internal class Splitbrushedhoodie
     {
-        public Splitbrushedhoodie()
+        
+        public string getName()
         {
-            base.Name = "arch logo brushed hoodie";
-            base.Color = "black";
-            base.Price = "1600";
+            string Name = "Split brushed hoodie";
+            return Name;
+        }
+        public string getColor()
+        {
+            string Color = "black";
+            return Color;
+        }
+        public string getPrice()
+        {
+            string Price = "1600";
+            return Price;
         }
     }
 }

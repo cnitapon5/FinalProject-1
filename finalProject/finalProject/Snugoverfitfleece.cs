@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace finalProject
 {
-    internal class Fadepatterncardigan
+    internal class Snugoverfitfleece
     {
-        
+
         public string getName()
         {
-            string Name = "fade pattern cardigan";
+            string Name = "snug overfit fleece";
             return Name;
         }
         public string getColor()
@@ -21,7 +21,7 @@ namespace finalProject
         }
         public string getPrice()
         {
-            string Price = "1600";
+            string Price = "1230";
             return Price;
         }
     }

@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace finalProject
 {
-    internal class Hoodie
+    internal class PaintPlayRaised
     {
-        protected string Name;
-        protected string Color;
-        protected string Price;
         public string getName()
         {
-            return this.Name;
+            string Name = "Paint Play Raised";
+            return Name;
         }
         public string getColor()
         {
-            return this.Color;
+            string Color = "black";
+            return Color;
         }
         public string getPrice()
         {
-            return this.Price;
+            string Price = "1530";
+            return Price;
         }
     }
 }
