@@ -120,7 +120,7 @@ namespace finalProject
 
             string Price = archlogobrushedhoodie.getPrice();
             textPrice.Text = Price;
-        } 
+        }
         private void button4_Click(object sender, EventArgs e)
         {
             string Name = archlogohoodzip_Up.getName();
@@ -132,7 +132,7 @@ namespace finalProject
             string Price = archlogohoodzip_Up.getPrice();
             textPrice.Text = Price;
         }
-       
+
 
         private void button7_Click_1(object sender, EventArgs e)
         {
@@ -210,6 +210,11 @@ namespace finalProject
         {
             int rowIndax = dataGridView1.CurrentCell.RowIndex;
             dataGridView1.Rows.RemoveAt(rowIndax);
+        }
+
+        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -8,7 +8,7 @@ namespace finalProject
 {
     internal class Splitbrushedhoodie
     {
-        
+
         public string getName()
         {
             string Name = "Split brushed hoodie";

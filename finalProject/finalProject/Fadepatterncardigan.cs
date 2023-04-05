@@ -8,7 +8,7 @@ namespace finalProject
 {
     internal class Fadepatterncardigan
     {
-        
+
         public string getName()
         {
             string Name = "fade pattern cardigan";

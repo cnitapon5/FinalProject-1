@@ -8,7 +8,7 @@ namespace finalProject
 {
     internal class NesticKickFleece
     {
-       
+
         public string getName()
         {
             string Name = "Nestic Kick Fleece";
